@@ -225,3 +225,8 @@ Figure img {
     transform: translateX(1em);
   }
 }
+
+/* || Skills */
+.skills {
+  background-color: var(--SIXTH-COLOR);
+}
