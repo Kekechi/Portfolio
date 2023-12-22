@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Container, Ratio } from "react-bootstrap";
 import projectList from "./projectList";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
@@ -11,14 +11,15 @@ function Projects() {
         <ResponsiveMasonry>
           <Masonry>
             {projectList.map((project) => (
-              <Card key={project.name} className="m-2">
+              <Card key={project.name} className="m-2 project-card">
                 {project.img ? (
-                  <Card.Img
-                    className="project-img"
-                    variant="top"
-                    src={"/src/assets/img/" + project.img}
-                    alt={project.img}
-                  />
+                  <div className="project-img">
+                    <Card.Img
+                      variant="top"
+                      src={"/src/assets/img/" + project.img}
+                      alt={project.img}
+                    />
+                  </div>
                 ) : null}
 
                 <Card.Body>
@@ -28,17 +29,19 @@ function Projects() {
                   >
                     {project.name}
                   </Card.Title>
-                  <Card.Text>
-                    <div>{project.skills}</div>
-                    <p className="d-flex ">
+                  <div className="position-relative">
+                    <div className="d-flex z-2 position-absolute show-project">
                       Show Project
                       <img
                         className="arrow-motion"
                         src="/src/assets/icons/arrow-right.svg"
                         alt=""
                       />
-                    </p>
-                  </Card.Text>
+                    </div>
+                    <div className="z-1 project-card-text">
+                      {project.skills}
+                    </div>
+                  </div>
                 </Card.Body>
               </Card>
             ))}
