@@ -13,7 +13,6 @@ img {
   --FS-XL: 2rem;
 
   /* COLORS */
-  --MAINSCHEME: #b1ddab;
   --BGCOLOR: #fff;
   --BGFOOTER: #f2f5f3;
   --FOOTER-COLOR: #8b9790;
@@ -21,6 +20,17 @@ img {
   --GRAY-COLOR: #6b7770;
   --DARK-COLOR: rgb(0, 0, 0);
   --BGTRANSPARENT: rgba(0, 0, 0, 0.4);
+
+  --FIRST-COLOR: #d9ed92;
+  --SECOND-COLOR: #b5e48c;
+  --THIRD-COLOR: #99d98c;
+  --FOURTH-COLOR: #76c893;
+  --FIFTH-COLOR: #52b69a;
+  --SIXTH-COLOR: #34a0a4;
+  --SEVENTH-COLOR: #168aad;
+  --EIGHTH-COLOR: #1a759f;
+  --NINTH-COLOR: #1e6091;
+  --TENTH-COLOR: #184e77;
 
   /* BORDERS */
   --SCHEME-BORDER-SIZE: 30px;
@@ -67,10 +77,6 @@ body {
   background: var(--BGCOLOR);
 }
 
-main div:first-child {
-  margin-top: 2rem;
-}
-
 main > :last-child {
   margin-bottom: 2rem;
 }
@@ -81,6 +87,13 @@ Figure {
 Figure img {
   width: 100%;
   height: auto;
+}
+
+.suppress-link,
+.suppress-link:visited,
+.suppress-link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* || Navbar */
@@ -109,4 +122,70 @@ Figure img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* || Home */
+.hero {
+  background-image: radial-gradient(
+    circle at 80% 50%,
+    var(--FIFTH-COLOR) 0%,
+    var(--SIXTH-COLOR) 20%,
+    var(--SEVENTH-COLOR) 40%,
+    var(--EIGHTH-COLOR) 60%,
+    var(--NINTH-COLOR) 80%,
+    var(--TENTH-COLOR) 100%
+  );
+  height: 100vh;
+
+  text-shadow: 0 0 10px var(--BGTRANSPARENT);
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.headline {
+  font-size: 1.5rem;
+}
+
+/*  || Profile */
+.profile {
+  background-color: var(--EIGHTH-COLOR);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* || Projects */
+.projects {
+  background-color: var(--SEVENTH-COLOR);
+}
+
+.arrow-motion {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  animation: 0.5s ease-out 0s infinite alternate both running forwards;
+}
+
+@keyframes forwards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1em);
+  }
 }

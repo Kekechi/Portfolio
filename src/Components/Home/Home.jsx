@@ -1,12 +1,14 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import Profile from "./Profile/Profile";
+import { Hero } from "./Hero/Hero";
+import Projects from "./Projects/Projects";
 
 const Home = () => {
   return (
     <main>
-      <Container>
-        <Button>Home</Button>
-      </Container>
+      <Hero />
+      <Profile />
+      <Projects />
     </main>
   );
 };

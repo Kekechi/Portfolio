@@ -1,19 +1,25 @@
 import React from "react";
 import { Container, Nav as BootNav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Nav() {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand as={Link} to="/">
-          Keigo Morita Portfolio
+        <Navbar.Brand as={HashLink} to="/#top">
+          <b>KeigoM</b>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <BootNav className="me-auto">
-            <BootNav.Link as={Link} to="/">
+            <BootNav.Link as={HashLink} to="/#top">
               Home
+            </BootNav.Link>
+            <BootNav.Link as={HashLink} to="#profile">
+              Profile
+            </BootNav.Link>
+            <BootNav.Link as={HashLink} to="#projects">
+              Projects
             </BootNav.Link>
           </BootNav>
         </Navbar.Collapse>
