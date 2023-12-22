@@ -173,6 +173,10 @@ Figure img {
   background-color: var(--SEVENTH-COLOR);
 }
 
+.project-card {
+  box-shadow: 0 0 10px var(--BGTRANSPARENT);
+}
+
 .project-img {
   overflow: hidden;
 }
