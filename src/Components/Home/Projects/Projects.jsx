@@ -16,7 +16,7 @@ function Projects() {
                   <Card.Img
                     className="project-img"
                     variant="top"
-                    src={"/src/assets/img" + project.img}
+                    src={"/src/assets/img/" + project.img}
                     alt={project.img}
                   />
                 ) : null}
