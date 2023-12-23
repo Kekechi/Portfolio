@@ -127,7 +127,7 @@ Figure img {
 /* || Home */
 .hero {
   background-image: radial-gradient(
-    circle at 80% 50%,
+    circle at 80% 40%,
     var(--FIFTH-COLOR) 0%,
     var(--SIXTH-COLOR) 20%,
     var(--SEVENTH-COLOR) 40%,
