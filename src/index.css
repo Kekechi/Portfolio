@@ -234,3 +234,8 @@ Figure img {
 .skill-items {
   font-size: 1.5em;
 }
+
+/* || Experience */
+.experience {
+  background-color: var(--FIFTH-COLOR);
+}
