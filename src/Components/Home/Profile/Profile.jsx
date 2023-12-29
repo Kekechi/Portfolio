@@ -3,7 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function Profile() {
   return (
-    <div className="profile" id="profile">
+    <div className="profile">
+      <div className="section-anchor" id="profile"></div>
       <Container className="py-5">
         <h1 className="text-light">Profile</h1>
         <Row className="pt-5">

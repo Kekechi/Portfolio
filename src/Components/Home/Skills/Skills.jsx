@@ -4,7 +4,8 @@ import skillLists from "./skillLists";
 
 function Skills() {
   return (
-    <div id="skills" className="skills">
+    <div className="skills">
+      <div className="section-anchor" id="skills"></div>
       <Container className="py-5">
         <h1 className="text-light">Skills</h1>
 

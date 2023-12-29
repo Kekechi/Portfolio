@@ -96,6 +96,11 @@ Figure img {
   color: inherit;
 }
 
+.section-anchor {
+  position: relative;
+  top: -3.5rem;
+}
+
 /* || Navbar */
 
 .navbar {

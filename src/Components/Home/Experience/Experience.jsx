@@ -3,7 +3,8 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 
 function Experience() {
   return (
-    <div id="experience" className="experience">
+    <div className="experience">
+      <div className="section-anchor" id="experience"></div>
       <Container className="py-5">
         <h1 className="text-light">Experience</h1>
         <Row>

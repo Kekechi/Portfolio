@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 
 function Projects() {
   return (
-    <div className="projects" id="projects">
+    <div className="projects">
+      <div className="section-anchor" id="projects"></div>
       <Container className="py-5">
         <h1 className="text-light">Projects</h1>
         <ResponsiveMasonry>
