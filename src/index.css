@@ -17,7 +17,7 @@ img {
   --BGFOOTER: #f2f5f3;
   --FOOTER-COLOR: #8b9790;
   --LIGHT-COLOR: #fff;
-  --GRAY-COLOR: #6b7770;
+  --GRAY-COLOR: rgb(107, 119, 112);
   --DARK-COLOR: rgb(0, 0, 0);
   --BGTRANSPARENT: rgba(0, 0, 0, 0.4);
 
@@ -30,7 +30,7 @@ img {
   --SEVENTH-COLOR: #168aad;
   --EIGHTH-COLOR: #1a759f;
   --NINTH-COLOR: #1e6091;
-  --TENTH-COLOR: #184e77;
+  --TENTH-COLOR: rgb(24, 78, 119);
 
   /* BORDERS */
   --SCHEME-BORDER-SIZE: 30px;
@@ -237,5 +237,89 @@ Figure img {
 
 /* || Experience */
 .experience {
-  background-color: var(--FIFTH-COLOR);
+  background-color: var(--TENTH-COLOR);
+  --EXPERIENCE-CARD-HEIGHT: 30vh;
+}
+
+.experience-card {
+  position: relative;
+  color: var(--LIGHT-COLOR);
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  width: 100%;
+  height: var(--EXPERIENCE-CARD-HEIGHT);
+  z-index: 2;
+  margin-top: 1.5rem;
+  transition: transform 0.3s ease-out;
+}
+
+.experience-card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--BGTRANSPARENT);
+  background: #153f5b;
+  border-radius: var(--BORDER-RADIUS);
+  border: rgba(255, 255, 255, 0.2) 5px solid;
+  z-index: -1;
+  transition: transform 0.3s ease-out, border 0.3s ease-out;
+}
+
+.experience-card-background img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(-30%, -5%);
+  opacity: 0.1;
+  transition: transform 0.3s ease-out;
+}
+
+.experience-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  transition: transform 0.3s ease-out;
+}
+
+.experience-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  border-radius: var(--BORDER-RADIUS);
+  padding: var(--PADDING-TB) calc(var(--PADDING-SIDE) * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(calc(-15vh + 5%));
+}
+
+.experience-card:hover {
+  z-index: 3;
+}
+
+.experience-card:hover .experience-card-background {
+  transform: scaleY(2);
+  border-top: rgba(255, 255, 255, 0.8) 2.5px solid;
+  border-bottom: rgba(255, 255, 255, 0.8) 2.5px solid;
+  border-left: rgba(255, 255, 255, 0.8) 5px solid;
+  border-right: rgba(255, 255, 255, 0.8) 5px solid;
+}
+
+.experience-card:hover .experience-card-background img {
+  transform: translate(-30%, -5%) scaleX(1.5) scaleY(0.75);
+}
+
+.experience-card:hover .experience-title {
+  transform: translateY(15vh);
+}
+.experience-card:hover .experience-card-content {
+  opacity: 1;
+  transition: opacity 0.2s ease-out 0.3s;
 }
