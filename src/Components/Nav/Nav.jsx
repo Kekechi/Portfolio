@@ -21,6 +21,12 @@ function Nav() {
             <BootNav.Link as={HashLink} to="#projects">
               Projects
             </BootNav.Link>
+            <BootNav.Link as={HashLink} to="#skills">
+              Skills
+            </BootNav.Link>
+            <BootNav.Link as={HashLink} to="#experience">
+              Experience
+            </BootNav.Link>
           </BootNav>
         </Navbar.Collapse>
       </Container>
