@@ -69,19 +69,21 @@ function Experience() {
           <Col lg={4}>
             <div className="experience-card">
               <div className="experience-card-background">
-                <img src="src/assets/img/jci.png" alt="" />
+                <img src="src/assets/img/patribots.png" alt="" />
               </div>
-
               <div className="experience-card-content">
-                <h6>Position: IT Volunteer</h6>
-                <p>March 2020 - Present</p>
+                <h6>Position: Programming Lead</h6>
+                <p>September 2020 - June 2023</p>
                 <p>
-                  Advised students on online learning tools and strategies.
-                  Assisted with instructional activities and assessments in
-                  virtual classes.
+                  Led a team of 8 in Java-based robot programming, integrating
+                  everyone's contributions. Cultivated team-building skills,
+                  ensuring a cohesive and harmonious work environment. Achieved
+                  the Imagery Award at the Las Vegas regional competition.
                 </p>
               </div>
-              <h4 className="experience-title">GVJCI Language School</h4>
+              <h4 className="experience-title">
+                FRC Robotics Team 4738 Patribots
+              </h4>
             </div>
           </Col>
         </Row>
