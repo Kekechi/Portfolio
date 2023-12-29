@@ -54,13 +54,13 @@ function Experience() {
               </div>
 
               <div className="experience-card-content">
-                <h6>Position: Volunteer Leader</h6>
+                <h6>Position: Volunteer Leader / Founder</h6>
                 <p>May 2022 - Present</p>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Rerum qui ipsa nemo perferendis tenetur est, totam quidem
-                  aliquid obcaecati deleniti. Iusto assumenda rerum ad sunt
-                  tempora laborum quisquam voluptatum ratione.
+                  Founded a student volunteer organization to counter the
+                  decline in Japan-U.S. cultural exchange among youth. As a
+                  representative, led efforts to immerse American children in
+                  Japanese culture and language, enhancing global understanding.
                 </p>
               </div>
               <h4 className="experience-title">SKGOJapanese</h4>
