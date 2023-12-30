@@ -180,6 +180,7 @@ Figure img {
 
 .project-card {
   box-shadow: 0 0 10px var(--BGTRANSPARENT);
+  overflow: hidden;
 }
 
 .project-img {
