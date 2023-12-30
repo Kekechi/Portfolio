@@ -20,6 +20,7 @@ const projectList = [
   {
     name: "Shakespearean Text Generator",
     skills: "Python, Tensorflow",
+    img: "shakespeare.png",
   },
   {
     name: "Port Scanner",
