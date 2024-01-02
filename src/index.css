@@ -339,3 +339,8 @@ Figure img {
     opacity: 1;
   }
 }
+
+/* Education */
+.education {
+  background-color: var(--EIGHTH-COLOR);
+}
