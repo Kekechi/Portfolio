@@ -16,7 +16,7 @@ const experienceList = [
     img: "newspicks.png",
   },
   {
-    title: "SKGOJapanese",
+    title: "SKGOJapanese Volunteer Organization",
     position: "Volunteer Leader / Founder",
     date: "May 2022 - Present",
     description:
@@ -36,8 +36,32 @@ const experienceList = [
     position: "Programming Lead",
     date: "September 2020 - June 2023",
     description:
-      " Led a team of 8 in Java-based robot programming, integrating everyone's contributions. Cultivated team-building skills, ensuring a cohesive and harmonious work environment. Achieved the Imagery Award at the Las Vegas regional competition.",
+      "Led a team of 8 in Java-based robot programming, integrating everyone's contributions. Cultivated team-building skills, ensuring a cohesive and harmonious work environment. Achieved the Imagery Award at the Las Vegas regional competition.",
     img: "patribots.png",
+  },
+  {
+    title: "SDSU AI Club",
+    position: "Member",
+    date: "September 2023 - Present",
+    description:
+      "AI programming and research with Python. Participate in workshops and lectures by guest speakers. Research on image recognition, voice recognition, etc.",
+    img: "aiclub.png",
+  },
+  {
+    title: "SDSU eLEET Coders Club",
+    position: "Member",
+    date: "September 2023 - Present",
+    description:
+      "Sharpen coding skills by solving challenges on Leetcode. Alumni provide career guidance and insight on programming language trends.",
+    img: "leetcode.svg",
+  },
+  {
+    title: "Startup San Diego",
+    position: "Volunteer",
+    date: "October 2023 - Present",
+    description:
+      "Volunteered and attended the 2023 San Diego Startup Week. Gained insight into the startup ecosystem, networked with entrepreneurs, and learned about the entrepreneurial mindset.",
+    img: "startupsandiego.png",
   },
 ];
 
