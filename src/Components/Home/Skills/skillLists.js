@@ -19,7 +19,7 @@ const skillLists = {
     "Windows",
     "Windows Server",
   ],
-  others: ["English", "Japanese"],
+  others: ["English (Native)", "Japanese (Native)"],
 };
 
 export default skillLists;
