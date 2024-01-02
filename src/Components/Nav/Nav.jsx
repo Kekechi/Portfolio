@@ -15,16 +15,16 @@ function Nav() {
             <BootNav.Link as={HashLink} to="/#top">
               Home
             </BootNav.Link>
-            <BootNav.Link as={HashLink} to="#profile">
+            <BootNav.Link as={HashLink} to="/#profile">
               Profile
             </BootNav.Link>
-            <BootNav.Link as={HashLink} to="#projects">
+            <BootNav.Link as={HashLink} to="/#projects">
               Projects
             </BootNav.Link>
-            <BootNav.Link as={HashLink} to="#skills">
+            <BootNav.Link as={HashLink} to="/#skills">
               Skills
             </BootNav.Link>
-            <BootNav.Link as={HashLink} to="#experience">
+            <BootNav.Link as={HashLink} to="/#experience">
               Experience
             </BootNav.Link>
           </BootNav>
