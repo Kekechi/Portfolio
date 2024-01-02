@@ -27,7 +27,7 @@ const projectList = [
     skills: "python",
   },
   {
-    name: "ios Programming",
+    name: "iOS Programming",
     skills: "Swift, Xcode",
     img: "iosProgramming.png",
   },
