@@ -348,3 +348,8 @@ Figure img {
 .education {
   background-color: var(--EIGHTH-COLOR);
 }
+
+/* Courses */
+.courses {
+  background-color: var(--NINTH-COLOR);
+}
