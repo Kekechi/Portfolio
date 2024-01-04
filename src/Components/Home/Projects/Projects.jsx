@@ -30,12 +30,7 @@ function Projects() {
                   ) : null}
 
                   <Card.Body>
-                    <Card.Title
-                      className="overflow-hidden nowrap"
-                      style={{ textOverflow: "ellipsis" }}
-                    >
-                      {project.name}
-                    </Card.Title>
+                    <Card.Title className="">{project.name}</Card.Title>
                     <div className="position-relative">
                       <div className="d-flex z-2 position-absolute show-project">
                         Show Project
