@@ -245,6 +245,29 @@ Figure img {
   font-size: 1.5em;
 }
 
+.skill-row {
+  --bs-gutter-x: 2%;
+}
+
+.skill-icon {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+  padding-top: 10%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.skill-icon h6 {
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+
+.skill-icon img {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /* || Experience */
 .experience {
   background-color: var(--TENTH-COLOR);
