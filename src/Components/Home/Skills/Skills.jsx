@@ -24,7 +24,7 @@ function Skills() {
               ))}
             </Row>
             <h2 className="text-light pt-2">Frameworks</h2>
-            <Row>
+            <Row className="skill-row">
               {skillLists.frameworks.map((framework, index) => (
                 <Col className="my-1" xs={2} key={framework.name}>
                   <div className="skill-icon">
@@ -40,7 +40,7 @@ function Skills() {
               ))}
             </Row>
             <h2 className="text-light pt-2">Database</h2>
-            <Row>
+            <Row className="skill-row">
               {skillLists.databases.map((database, index) => (
                 <Col className="my-1" xs={2} key={database.name}>
                   <div className="skill-icon">
@@ -53,7 +53,7 @@ function Skills() {
               ))}
             </Row>
             <h2 className="text-light pt-2">Languages</h2>
-            <Row>
+            <Row className="skill-row">
               {skillLists.others.map((other, index) => (
                 <Col className="my-1" xs={2} key={other.name}>
                   <div className="skill-icon">
@@ -68,7 +68,7 @@ function Skills() {
           </Col>
           <Col sm={12} md={6}>
             <h2 className="text-light pt-2">Tools</h2>
-            <Row>
+            <Row className="skill-row">
               {skillLists.tools.map((tool, index) => (
                 <Col className="my-1" xs={2} key={tool.name}>
                   <div className="skill-icon">
