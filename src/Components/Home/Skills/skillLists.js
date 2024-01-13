@@ -24,6 +24,7 @@ const skillLists = {
     { name: "Burp Suite", icon: "burpsuite.svg" },
     { name: "Nmap", icon: "nmap.svg" },
     { name: "Metasploit", icon: "metasploit.ico" },
+    { name: "John the Ripper", icon: "johntheripper.jpg" },
     { name: "Kali Linux", icon: "kali.svg" },
     { name: "Ubuntu", icon: "ubuntu.svg" },
     { name: "Windows", icon: "windows.svg" },
