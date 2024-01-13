@@ -46,6 +46,11 @@ const projectList = [
     description:
       "Hosted with guest picture book author Shinobu Saito. Organized and conducted hiragana games and picture book-making workshops for American children. Coordinated and led a team of volunteers from Japan. Guided Japanese volunteers in creating English content. Aimed at fostering Japan-U.S. cultural exchanges.",
   },
+  {
+    name: "Hack The Box",
+    skills: "nmap, metasploit, john the ripper, etc",
+    img: "hackthebox.svg",
+  },
   // Taski Website
 ];
 
