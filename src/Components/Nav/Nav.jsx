@@ -46,12 +46,7 @@ function Nav() {
           <BootNav>
             <BootNav.Link
               as={HashLink}
-              to={
-                "/" +
-                changeLangCode +
-                location.pathname.slice(3) +
-                location.hash
-              }
+              to={"/" + changeLangCode + location.pathname.slice(3)}
             >
               <img
                 src={`/src/assets/icons/${changeLangImg}`}
