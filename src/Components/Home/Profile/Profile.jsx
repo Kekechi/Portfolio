@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import profileTexts from "./profileTexts";
+import LangContext from "../../../Context/LangContext";
 
 function Profile() {
+  const lang = useContext(LangContext);
+  const profileTextsObj = profileTexts[lang];
+
   return (
     <div className="profile">
       <div className="section-anchor" id="profile"></div>
       <Container className="py-5">
-        <h1 className="text-light">Profile</h1>
+        <h1 className="text-light">{profileTextsObj.title}</h1>
         <Row className="pt-5">
           <Col xs={12} lg={4}>
             <div className="profile-pic">
@@ -14,13 +19,9 @@ function Profile() {
             </div>
           </Col>
           <Col xs lg={8}>
-            <h2 className="text-light">Keigo Morita</h2>
+            <h2 className="text-light">{profileTextsObj.name}</h2>
             <p className="text-light">
-              Currently pursuing a Bachelor of Science in Computer Science at
-              San Diego State University. Passionate about leveraging web
-              development and user experience design to build solutions that
-              drive positive societal impact. Developed a website for kids to
-              learn the Japanese Language and Culture:{" "}
+              {profileTextsObj.description}
               <a href="https://skgojapanese.com" className="suppress-link">
                 skgojapanese.com
               </a>
