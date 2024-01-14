@@ -1,11 +1,14 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Outlet, redirect, useLoaderData } from "react-router-dom";
 import Nav from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
 import LangContext from "./Context/LangContext";
 import metadata from "./metadata";
 
 const loader = ({ params }) => {
-  const lang = params?.lang ?? "en";
+  const lang = params.lang;
+  if (!lang) {
+    return redirect("/en");
+  }
 
   document.documentElement.lang = lang;
   document.title = metadata[lang].title;

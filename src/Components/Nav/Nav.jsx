@@ -2,9 +2,14 @@ import React, { useContext } from "react";
 import { Container, Nav as BootNav, Navbar } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import LangContext from "../../Context/LangContext";
+import { useLocation } from "react-router-dom";
 
 function Nav() {
   const lang = useContext(LangContext);
+  const location = useLocation();
+
+  const [changeLangCode, changeLangImg] =
+    "en" === lang ? ["ja", "japan.svg"] : ["en", "america.svg"];
 
   return (
     <Navbar bg="light" expand="lg" fixed="top">
@@ -36,6 +41,24 @@ function Nav() {
             </BootNav.Link>
             <BootNav.Link as={HashLink} to={`/${lang}/#experience`}>
               Experience
+            </BootNav.Link>
+          </BootNav>
+          <BootNav>
+            <BootNav.Link
+              as={HashLink}
+              to={
+                "/" +
+                changeLangCode +
+                location.pathname.slice(3) +
+                location.hash
+              }
+            >
+              <img
+                src={`/src/assets/icons/${changeLangImg}`}
+                alt=""
+                height="40"
+                style={{ border: "3px solid black", borderRadius: "10%" }}
+              />
             </BootNav.Link>
           </BootNav>
         </Navbar.Collapse>
