@@ -10,7 +10,14 @@ function Nav() {
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand as={HashLink} to={`/${lang}/#top`}>
-          <b>KeigoM</b>
+          <img
+            alt=""
+            src="/src/assets/img/favicon.png"
+            width="40"
+            height="40"
+            className="d-inline-block align-center"
+          />{" "}
+          <b>Keigo M</b>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
