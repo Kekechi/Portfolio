@@ -8,9 +8,6 @@ function Nav() {
   const lang = useContext(LangContext);
   const location = useLocation();
 
-  const [changeLangCode, changeLangImg] =
-    "en" === lang ? ["ja", "japan.svg"] : ["en", "america.svg"];
-
   return (
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
@@ -46,14 +43,33 @@ function Nav() {
           <BootNav>
             <BootNav.Link
               as={HashLink}
-              to={"/" + changeLangCode + location.pathname.slice(3)}
+              to={"/en" + location.pathname.slice(3)}
+              disabled={lang === "en"}
+              className="px-1"
             >
-              <img
-                src={`/src/assets/icons/${changeLangImg}`}
-                alt=""
-                height="40"
-                style={{ border: "3px solid black", borderRadius: "10%" }}
-              />
+              <div className="lang-switch">
+                <img
+                  src={"/src/assets/icons/america.svg"}
+                  alt=""
+                  height="40"
+                  className="d-inline-block align-top"
+                />
+              </div>
+            </BootNav.Link>
+            <BootNav.Link
+              as={HashLink}
+              to={"/ja" + location.pathname.slice(3)}
+              className="px-1"
+              disabled={lang === "ja"}
+            >
+              <div className="lang-switch">
+                <img
+                  src={"/src/assets/icons/japan.svg"}
+                  alt=""
+                  height="40"
+                  className="d-inline-block align-top"
+                />
+              </div>
             </BootNav.Link>
           </BootNav>
         </Navbar.Collapse>

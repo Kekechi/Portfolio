@@ -112,6 +112,22 @@ Figure img {
   opacity: 0.9;
 }
 
+.lang-switch {
+  border: 3px solid grey;
+  border-radius: 10%;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-out;
+}
+
+.disabled .lang-switch {
+  opacity: 1;
+}
+
+.lang-switch:active,
+.lang-switch:hover {
+  opacity: 1;
+}
+
 /* || Footer */
 
 .footer {
