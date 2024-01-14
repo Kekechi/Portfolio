@@ -19,9 +19,9 @@ img {
   --BGFOOTER: #f2f5f3;
   --FOOTER-COLOR: #8b9790;
   --LIGHT-COLOR: #fff;
-  --GRAY-COLOR: rgb(107, 119, 112);
-  --DARK-COLOR: rgb(0, 0, 0);
-  --BGTRANSPARENT: rgba(0, 0, 0, 0.4);
+  --GRAY-COLOR: #6b7770;
+  --DARK-COLOR: #000000;
+  --BGTRANSPARENT: #00000066;
 
   --FIRST-COLOR: #d9ed92;
   --SECOND-COLOR: #b5e48c;
@@ -32,7 +32,7 @@ img {
   --SEVENTH-COLOR: #168aad;
   --EIGHTH-COLOR: #1a759f;
   --NINTH-COLOR: #1e6091;
-  --TENTH-COLOR: rgb(24, 78, 119);
+  --TENTH-COLOR: #184e77;
 
   /* BORDERS */
   --SCHEME-BORDER-SIZE: 30px;
