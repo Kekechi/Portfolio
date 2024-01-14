@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900display=swap");
 /* || RESET */
 
 img {
@@ -8,7 +10,7 @@ img {
 
 :root {
   /*  FONTS */
-  --FF: Arial, Helvetica, sans-serif;
+  --FF: "Noto Sans JP", Arial, Helvetica, sans-serif;
   --FS: 1rem;
   --FS-XL: 2rem;
 
@@ -67,14 +69,14 @@ img {
 }
 
 html {
-  font-family: var(--FF);
-  font-size: var(--FS);
-
   scroll-behavior: smooth;
 }
 
 body {
   background: var(--BGCOLOR);
+
+  font-family: var(--FF);
+  font-size: var(--FS);
 }
 
 main > :last-child {

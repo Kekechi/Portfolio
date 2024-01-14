@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Accordion, Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import LangContext from "../../../Context/LangContext";
 
 function Education() {
+  const lang = useContext(LangContext);
   return (
     <div className="education">
       <div className="section-anchor" id="education"></div>
@@ -23,14 +25,14 @@ function Education() {
             </div>
             <Link
               className="suppress-link text-light text-decoration-underline"
-              to="/courses"
+              to={`/${lang}/courses`}
             >
               View Courses
             </Link>
           </Col>
           <Col md={6}>
             <Image
-              src="src/assets/img/sdsu.jpg"
+              src="/src/assets/img/sdsu.jpg"
               rounded
               fluid
               className="border border-3"

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App, { loader } from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -9,18 +9,19 @@ import Courses from "./Components/Courses/Courses.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/:lang?/",
     element: <App />,
+    loader: loader,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/project/:name",
+        path: "project/:name",
       },
       {
-        path: "/courses",
+        path: "courses",
         element: <Courses />,
       },
     ],

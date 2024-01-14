@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card, Container, Ratio } from "react-bootstrap";
 import projectList from "./projectList";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Link } from "react-router-dom";
+import LangContext from "../../../Context/LangContext";
 
 function Projects() {
+  const lang = useContext(LangContext);
+
   return (
     <div className="projects">
       <div className="section-anchor" id="projects"></div>
@@ -15,7 +18,7 @@ function Projects() {
             {projectList.map((project) => (
               <Link
                 key={project.name}
-                to={`/project/${project.name}`}
+                to={`/${lang}/project/${project.name}`}
                 className="suppress-link"
               >
                 <Card className="m-2 project-card">
