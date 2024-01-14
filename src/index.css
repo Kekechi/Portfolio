@@ -70,13 +70,13 @@ img {
 
 html {
   scroll-behavior: smooth;
+  font-size: var(--FS);
 }
 
 body {
   background: var(--BGCOLOR);
 
   font-family: var(--FF);
-  font-size: var(--FS);
 }
 
 main > :last-child {
