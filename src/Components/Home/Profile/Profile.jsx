@@ -10,7 +10,7 @@ function Profile() {
         <Row className="pt-5">
           <Col xs={12} lg={4}>
             <div className="profile-pic">
-              <img src="src\assets\img\profile.JPG" alt="" />
+              <img src="/src/assets/img/profile.JPG" alt="" />
             </div>
           </Col>
           <Col xs lg={8}>

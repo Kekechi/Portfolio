@@ -16,7 +16,10 @@ function Skills() {
                 <Col className="my-1" xs={2} key={language.name}>
                   <div className="skill-icon">
                     <div>
-                      <Image src={`src/assets/icons/${language.icon}`} alt="" />
+                      <Image
+                        src={`/src/assets/icons/${language.icon}`}
+                        alt=""
+                      />
                     </div>
                     <h6 className="text-center">{language.name}</h6>
                   </div>
@@ -30,7 +33,7 @@ function Skills() {
                   <div className="skill-icon">
                     <div>
                       <Image
-                        src={`src/assets/icons/${framework.icon}`}
+                        src={`/src/assets/icons/${framework.icon}`}
                         alt=""
                       />
                     </div>
@@ -45,7 +48,10 @@ function Skills() {
                 <Col className="my-1" xs={2} key={database.name}>
                   <div className="skill-icon">
                     <div>
-                      <Image src={`src/assets/icons/${database.icon}`} alt="" />
+                      <Image
+                        src={`/src/assets/icons/${database.icon}`}
+                        alt=""
+                      />
                     </div>
                     <h6 className="text-center">{database.name}</h6>
                   </div>
@@ -58,7 +64,7 @@ function Skills() {
                 <Col className="my-1" xs={2} key={other.name}>
                   <div className="skill-icon">
                     <div>
-                      <Image src={`src/assets/icons/${other.icon}`} alt="" />
+                      <Image src={`/src/assets/icons/${other.icon}`} alt="" />
                     </div>
                     <h6 className="text-center">{other.name}</h6>
                   </div>
@@ -73,7 +79,7 @@ function Skills() {
                 <Col className="my-1" xs={2} key={tool.name}>
                   <div className="skill-icon">
                     <div>
-                      <Image src={`src/assets/icons/${tool.icon}`} alt="" />
+                      <Image src={`/src/assets/icons/${tool.icon}`} alt="" />
                     </div>
                     <h6 className="text-center">{tool.name}</h6>
                   </div>
