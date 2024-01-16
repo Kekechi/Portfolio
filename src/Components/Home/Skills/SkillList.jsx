@@ -8,7 +8,9 @@ function SkillList({ list, title }) {
 
   return (
     <>
-      <h2 className="text-light pt-2">{title}</h2>
+      <h2 className={"text-light pt-2 typeIn " + (show ? "show" : "")}>
+        {title}
+      </h2>
 
       <InView onChange={(inView, entry) => setShow(inView)}>
         <Row className="skill-row">

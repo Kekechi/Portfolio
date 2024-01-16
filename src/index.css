@@ -114,7 +114,14 @@ Figure img {
 
 .fadeIn.show {
   opacity: 1;
-  transition: opacity 0.5s ease-out 0.2s;
+}
+
+.blurIn {
+  filter: blur(10px);
+}
+
+.blurIn.show {
+  filter: blur(0);
 }
 
 .flyInRight {
@@ -130,6 +137,14 @@ Figure img {
   transition: transform 0.3s ease-out;
 }
 
+.flyInLeft {
+  transform: translateX(-100%);
+}
+
+.flyInLeft.show {
+  transform: translateX(0);
+}
+
 .typeIn {
   width: 0;
   overflow: hidden;
@@ -139,6 +154,26 @@ Figure img {
 .typeIn.show {
   width: 100%;
   transition: width 1s ease-out 0.2s;
+}
+
+.scaleIn {
+  transform: scale(0);
+}
+
+.scaleIn.show {
+  transform: scale(1);
+}
+
+.show {
+  --i: 0;
+  --delay: 0s;
+  --i-mul: 0.1s;
+}
+
+.show {
+  transition: opacity 0.5s ease-out 0.2s,
+    transform 0.3s ease-out calc(var(--delay) + var(--i) * var(--i-mul)),
+    filter 0.3s ease-out calc(var(--delay) + var(--i) * var(--i-mul));
 }
 
 @media (prefers-reduced-motion) {
@@ -313,14 +348,6 @@ Figure img {
   padding-top: 10%;
   overflow: hidden;
   height: 100%;
-  transform: scale(0);
-  --i: 0;
-}
-
-.skill-icon.show {
-  transform: scale(1);
-
-  transition: transform 0.3s ease-out calc(var(--i) * 0.1s);
 }
 
 .skill-icon h6 {

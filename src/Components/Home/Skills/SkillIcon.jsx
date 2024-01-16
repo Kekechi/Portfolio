@@ -20,7 +20,7 @@ function SkillIcon({ icon, name, index, show }) {
 
   return (
     <div
-      className={"skill-icon " + (show ? "show" : "")}
+      className={"skill-icon scaleIn " + (show ? "show" : "")}
       style={{ "--i": index }}
     >
       <div>
