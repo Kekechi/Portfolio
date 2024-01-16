@@ -15,7 +15,7 @@ function Experience() {
             <Col lg={4} key={experience.title}>
               <div className="experience-card">
                 <div className="experience-card-background">
-                  <img src={"/src/assets/img/" + experience.img} alt="" />
+                  <img src={"/img/" + experience.img} alt="" />
                 </div>
 
                 <div className="experience-card-content">

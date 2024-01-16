@@ -8,7 +8,7 @@ function SkillIcon({ icon, name, index, show }) {
       style={{ "--i": index }}
     >
       <div>
-        <Image src={`/src/assets/icons/${icon}`} alt="" />
+        <Image src={`/icons/${icon}`} alt="" />
       </div>
       <h6 className="text-center">{name}</h6>
     </div>

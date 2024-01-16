@@ -32,7 +32,7 @@ function Education() {
           </Col>
           <Col md={6}>
             <Image
-              src="/src/assets/img/sdsu.jpg"
+              src="/img/sdsu.jpg"
               rounded
               fluid
               className="border border-3"

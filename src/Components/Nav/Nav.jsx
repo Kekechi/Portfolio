@@ -16,7 +16,7 @@ function Nav() {
         <Navbar.Brand as={HashLink} to={`/${lang}/#top`}>
           <img
             alt=""
-            src="/src/assets/img/favicon.png"
+            src="/img/favicon.png"
             width="40"
             height="40"
             className="d-inline-block align-center"
@@ -51,7 +51,7 @@ function Nav() {
             >
               <div className="lang-switch">
                 <img
-                  src={"/src/assets/icons/america.svg"}
+                  src={"/icons/america.svg"}
                   alt=""
                   height="40"
                   className="d-inline-block align-top"
@@ -66,7 +66,7 @@ function Nav() {
             >
               <div className="lang-switch">
                 <img
-                  src={"/src/assets/icons/japan.svg"}
+                  src={"/icons/japan.svg"}
                   alt=""
                   height="40"
                   className="d-inline-block align-top"

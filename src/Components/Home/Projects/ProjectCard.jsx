@@ -17,7 +17,7 @@ function ProjectCard({ project, show, index }) {
           <div className="project-img">
             <Card.Img
               variant="top"
-              src={"/src/assets/img/" + project.img}
+              src={"/img/" + project.img}
               alt={project.img}
             />
           </div>
@@ -30,7 +30,7 @@ function ProjectCard({ project, show, index }) {
               Show Project
               <img
                 className="arrow-motion"
-                src="/src/assets/icons/arrow-right.svg"
+                src="/icons/arrow-right.svg"
                 alt=""
               />
             </div>
