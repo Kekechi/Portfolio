@@ -206,7 +206,7 @@ Figure img {
 
 .scroll-progress {
   height: 10px;
-  background: var(--SIXTH-COLOR);
+  background: orange;
   transform-origin: 0%;
   position: absolute;
   bottom: 0;
