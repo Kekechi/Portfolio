@@ -1,20 +1,21 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import profileTexts from "./profileTexts";
 import LangContext from "../../../Context/LangContext";
-import { InView } from "react-intersection-observer";
+import { useInView } from "framer-motion";
 
 function Profile() {
   const lang = useContext(LangContext);
   const profileTextsObj = profileTexts[lang];
-  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+  const show = useInView(ref);
 
   return (
     <div className="profile">
       <div className="section-anchor" id="profile"></div>
 
       <Container className="py-5">
-        <InView onChange={(inView, entry) => setShow(inView)}>
+        <div ref={ref}>
           <h1 className={"text-light typeIn " + (show ? "show" : "")}>
             {profileTextsObj.title}
           </h1>
@@ -34,7 +35,7 @@ function Profile() {
               </p>
             </Col>
           </Row>
-        </InView>
+        </div>
       </Container>
     </div>
   );

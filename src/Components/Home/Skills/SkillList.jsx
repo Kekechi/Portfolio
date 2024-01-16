@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import SkillIcon from "./SkillIcon";
-import { InView } from "react-intersection-observer";
+import { useInView } from "framer-motion";
 
 function SkillList({ list, title }) {
-  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+  const show = useInView(ref);
 
   return (
     <>
@@ -12,7 +13,7 @@ function SkillList({ list, title }) {
         {title}
       </h2>
 
-      <InView onChange={(inView, entry) => setShow(inView)}>
+      <div ref={ref}>
         <Row className="skill-row">
           {list.map((skill, index) => (
             <Col className="my-1" xs={2} key={skill.name}>
@@ -20,7 +21,7 @@ function SkillList({ list, title }) {
             </Col>
           ))}
         </Row>
-      </InView>
+      </div>
     </>
   );
 }
