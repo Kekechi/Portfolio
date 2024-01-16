@@ -76,6 +76,7 @@ body {
   background: var(--BGCOLOR);
 
   font-family: var(--FF);
+  overflow-x: hidden;
 }
 
 main > :last-child {
@@ -104,6 +105,37 @@ Figure img {
 
 .m-nav {
   margin-top: 3.5rem;
+}
+
+/* || TRANSITION */
+
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeIn.show {
+  opacity: 1;
+  transition: opacity 0.5s ease-out 0.2s;
+}
+
+.flyInRight {
+  transform: translateX(100%);
+}
+
+.flyInRight.show {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.typeIn {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.typeIn.show {
+  width: 100%;
+  transition: width 1s ease-out 0.2s;
 }
 
 /* || Navbar */
@@ -272,6 +304,20 @@ Figure img {
   padding-top: 10%;
   overflow: hidden;
   height: 100%;
+  transform: scale(0);
+  --i: 0;
+}
+
+.skill-icon.show {
+  transform: scale(1);
+
+  transition: transform 0.3s ease-out calc(var(--i) * 0.1s);
+}
+
+@media (prefers-reduced-motion) {
+  .skill-icon.show {
+    transition: none;
+  }
 }
 
 .skill-icon h6 {
