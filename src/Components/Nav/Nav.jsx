@@ -40,7 +40,7 @@ function Nav() {
               Experience
             </BootNav.Link>
           </BootNav>
-          <BootNav>
+          <BootNav className="flex-row">
             <BootNav.Link
               as={HashLink}
               to={"/en" + location.pathname.slice(3)}
