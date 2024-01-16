@@ -3,6 +3,8 @@ import { Container, Nav as BootNav, Navbar } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import LangContext from "../../Context/LangContext";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import ScrollProgress from "./ScrollProgress";
 
 function Nav() {
   const lang = useContext(LangContext);
@@ -74,6 +76,7 @@ function Nav() {
           </BootNav>
         </Navbar.Collapse>
       </Container>
+      <ScrollProgress />
     </Navbar>
   );
 }
