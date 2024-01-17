@@ -3,6 +3,7 @@ import Nav from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
 import LangContext from "./Context/LangContext";
 import metadata from "./metadata";
+import ScrollToTop from "./Components/Utils/ScrollToTop";
 
 const loader = ({ params }) => {
   const lang = params.lang;
@@ -28,6 +29,7 @@ function App() {
       <Nav />
       <Outlet />
       <Footer />
+      <ScrollToTop />
     </LangContext.Provider>
   );
 }
