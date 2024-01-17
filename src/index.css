@@ -173,7 +173,8 @@ Figure img {
 .show {
   transition: opacity 0.5s ease-out 0.2s,
     transform 0.3s ease-out calc(var(--delay) + var(--i) * var(--i-mul)),
-    filter 0.3s ease-out calc(var(--delay) + var(--i) * var(--i-mul));
+    filter 0.3s ease-out calc(var(--delay) + var(--i) * var(--i-mul)),
+    width 1s ease-out 0.2s;
 }
 
 @media (prefers-reduced-motion) {
