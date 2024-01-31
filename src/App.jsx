@@ -21,16 +21,28 @@ function App() {
   return (
     <LangContext.Provider value={lang}>
       <Helmet>
-        <html lang={lang} />
-        <title>{metadata[lang].title}</title>
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:description"
-          name="description"
-          content={metadata[lang].description}
-        />
         <meta property="og:title" content={metadata[lang].title} />
         <meta property="og:image" content="/img/favicon.png" />
+
+        {/* <!-- HTML Meta Tags --> */}
+        <html lang={lang} />
+        <title>{metadata[lang].title}</title>
+        <meta name="description" content={metadata[lang].description} />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://keigo.skgojapanese.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={metadata[lang].title} />
+        <meta property="og:description" content={metadata[lang].description} />
+        <meta property="og:image" content="/img/favicon.png" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="keigo.skgojapanese.com" />
+        <meta property="twitter:url" content="https://keigo.skgojapanese.com" />
+        <meta name="twitter:title" content={metadata[lang].title} />
+        <meta name="twitter:description" content={metadata[lang].description} />
+        <meta name="twitter:image" content="/img/favicon.png" />
       </Helmet>
       <LoadAnimation>
         <Nav />
