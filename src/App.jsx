@@ -4,6 +4,7 @@ import Footer from "./Components/Footer/Footer";
 import LangContext from "./Context/LangContext";
 import metadata from "./metadata";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
+import LoadAnimation from "./Components/LoadAnimation/LoadAnimation";
 
 const loader = ({ params }) => {
   const lang = params.lang;
@@ -26,9 +27,12 @@ function App() {
 
   return (
     <LangContext.Provider value={lang}>
-      <Nav />
-      <Outlet />
-      <Footer />
+      <LoadAnimation>
+        <Nav />
+        <Outlet />
+        <Footer />
+      </LoadAnimation>
+
       <ScrollToTop />
     </LangContext.Provider>
   );
