@@ -23,7 +23,14 @@ function App() {
       <Helmet>
         <html lang={lang} />
         <title>{metadata[lang].title}</title>
-        <meta name="description" content={metadata[lang].description} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          name="description"
+          content={metadata[lang].description}
+        />
+        <meta property="og:title" content={metadata[lang].title} />
+        <meta property="og:image" content="/img/favicon.png" />
       </Helmet>
       <LoadAnimation>
         <Nav />
