@@ -5,20 +5,13 @@ import LangContext from "./Context/LangContext";
 import metadata from "./metadata";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
 import LoadAnimation from "./Components/LoadAnimation/LoadAnimation";
+import { Helmet } from "react-helmet";
 
 const loader = ({ params }) => {
   const lang = params.lang;
   if (!lang) {
     return redirect("/en");
   }
-
-  document.documentElement.lang = lang;
-  document.title = metadata[lang].title;
-  const metaDescription = document.querySelector('meta[name="description"]');
-  if (metaDescription) {
-    metaDescription.setAttribute("content", metadata[lang].description);
-  }
-
   return lang;
 };
 
@@ -27,6 +20,11 @@ function App() {
 
   return (
     <LangContext.Provider value={lang}>
+      <Helmet>
+        <html lang={lang} />
+        <title>{metadata[lang].title}</title>
+        <meta name="description" content={metadata[lang].description} />
+      </Helmet>
       <LoadAnimation>
         <Nav />
         <Outlet />
