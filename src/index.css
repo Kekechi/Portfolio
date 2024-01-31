@@ -478,6 +478,7 @@ Figure img {
   right: 0;
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
   transition: transform 0.3s ease-out;
+  text-align: right;
 }
 
 .experience-card-content {
