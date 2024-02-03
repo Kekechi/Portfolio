@@ -5,7 +5,7 @@ function LoadAnimation({ children }) {
     <div>
       <div className="load-screen">
         <div className="load-icon">
-          <img src="/img/favicon.png" alt="" />
+          <img src="/img/icon.svg" height="225" width="344" alt="" />
         </div>
       </div>
       <div className="load-animation-elm"></div>

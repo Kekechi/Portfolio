@@ -16,10 +16,11 @@ function Nav() {
         <Navbar.Brand as={HashLink} to={`/${lang}/#top`}>
           <img
             alt=""
-            src="/img/favicon.png"
-            width="40"
-            height="40"
-            className="d-inline-block align-center"
+            src="/img/icon.svg"
+            width="auto"
+            height="50"
+            className="d-inline-block align-center rounded-1"
+            style={{ height: "2rem" }}
           />{" "}
           <b>Keigo M</b>
         </Navbar.Brand>
