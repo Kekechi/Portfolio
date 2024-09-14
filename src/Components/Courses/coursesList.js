@@ -2,6 +2,7 @@ const courseList = [
   {
     section: "Computer Science",
     courses: [
+      { name: "CS 210", title: "Data Structures" },
       { name: "CS 160", title: "Intermediate Computer Programming" },
       {
         name: "CS 160L",
@@ -11,7 +12,10 @@ const courseList = [
   },
   {
     section: "Mathematics",
-    courses: [{ name: "MATH 254", title: "Introduction to Linear Algebra" }],
+    courses: [
+      { name: "MATH 245", title: "Discrete Mathematics" },
+      { name: "MATH 254", title: "Introduction to Linear Algebra" },
+    ],
   },
   {
     section: "Interdisciplinary Studies",
